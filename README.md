@@ -1,4 +1,4 @@
-# Hermedoc
+# LocalDoc
 
 **AI-Powered Document Intelligence for Your Desktop**
 
@@ -6,7 +6,7 @@
 
 ## Overview
 
-Herma is a desktop application that lets you leverage local and cloud AI models for smart document analysis. Easily upload, process, and search your documents—PDFs, Word, PowerPoint, Excel, CSV, TXT, and JSON—and get context-aware AI assistance. All processing happens directly on your device, ensuring your workflow remains fast and flexible.
+LocalDoc is a desktop application that lets you leverage local and cloud AI models for smart document analysis. Easily upload, process, and search your documents—PDFs, Word, PowerPoint, Excel, CSV, TXT, and JSON—and get context-aware AI assistance. All processing happens directly on your device, ensuring your workflow remains fast and flexible.
 
 ---
 
