@@ -1,255 +1,69 @@
-# Herma
+# Hermedoc
 
-**AI That Protects Your Data**
-
+**AI-Powered Document Intelligence for Your Desktop**
 
 ---
 
 ## Overview
 
-Herma is a privacy-focused AI assistant that gives you complete control
-over your data through intelligent, automatic routing. Define your privacy
- boundaries once—Herma enforces them forever.
-
-### The Problem
-
-Every time you use cloud AI, you make an invisible trade: your
-confidential information for convenience. Sensitive documents, private
-thoughts, and proprietary data flow to distant servers where they may be
-used for training, logging, or analysis beyond your control.
-
-The alternative? Slow, limited local tools that can't match cloud AI's
-capabilities.
-
-**You shouldn't have to choose between power and privacy.**
-
-### The Solution
-
-Herma introduces **Data Governor Mode**—an intelligent routing system that
- automatically decides where your AI queries are processed based on rules
-*you* define.
-
-- **Sensitive query?** Processed 100% locally on your device. Zero
-internet required.
-- **General query?** Routed to powerful cloud models for maximum speed and
- quality.
-- **You decide the rules.** Herma enforces them. Automatically. Every
-time.
+Herma is a desktop application that lets you leverage local and cloud AI models for smart document analysis. Easily upload, process, and search your documents—PDFs, Word, PowerPoint, Excel, CSV, TXT, and JSON—and get context-aware AI assistance. All processing happens directly on your device, ensuring your workflow remains fast and flexible.
 
 ---
 
-## Three Modes, Infinite Control
+## Key Features
 
-### 🏰 Local Mode
-**Maximum Privacy. Zero Compromises.**
+### 📄 Universal Document Upload
 
-- All processing happens on your device
-- Works completely offline
-- Perfect for confidential work: legal documents, medical records,
-financial data, competitive strategy
-- Powered by Ollama with state-of-the-art local language models
+- Supports PDF, DOCX, PPTX, XLSX, CSV, TXT, JSON
+- Drag and drop for bulk uploads
 
-### 🛡️ Governor Mode *(The Herma Difference)*
-**Intelligence That Respects Your Boundaries.**
+### 🧐 Semantic Search & Embedding
 
-- Define your privacy constitution once (e.g., "Medical records and legal
-docs = local only")
-- Herma automatically routes each query to the appropriate processing
-location
-- Sensitive data stays local, general queries leverage cloud speed
-- Best of both worlds with zero friction
-- *(Experimental - always verify critical routing decisions)*
+- Processed documents are embedded into a vector database (ChromaDB)
+- Enables semantic search and question answering grounded in your uploaded materials
 
-### 🚀 Cloud Mode
-**Maximum Performance. Maximum Speed.**
+### 📋 Automatic Summarization
 
-- Direct access to cutting-edge cloud models via OpenRouter
-- Fastest responses, highest quality output
-- Perfect for creative work, research, brainstorming, and general queries
-- No local privacy protection—use when speed matters more than privacy
+- Summarizes documents using local language models
+- Quick insight into document content
 
----
+### ⚡ Fast Local Processing
 
-## Core Features
-
-### 📄 Document Intelligence (RAG)
-- Upload and analyze PDF, DOCX, PPTX, Excel, and more
-- Powered by ChromaDB vector database for semantic search
-- Documents are embedded and processed according to your privacy settings
-- Context-aware responses grounded in your uploaded materials
-
-### 🔐 Privacy Constitution
-- Define custom rules for what stays local vs. what can use cloud
-processing
-- Simple, natural language configuration
-- Automatically applied to every query—no manual toggling required
-- Update anytime; changes apply instantly
-
-### 🎯 Smart File Management
-- Upload files in Local, Governor, or Cloud mode
-- Each file remembers its privacy classification
-- Visual indicators show which processing mode applies
-- Free tier: 5 files | Pro tier: Unlimited files
-
-### 🔄 Seamless Mode Switching
-- Toggle between Local, Governor, and Cloud modes instantly
-- No restart required, no context lost
-- Your privacy constitution travels with you
-
-### 🌐 Works Anywhere
-- Fully offline capable in Local mode
-- Cross-platform desktop application (Windows, macOS, Linux)
-- Secure, sandboxed architecture
+- Leverages Ollama for running popular open-source language models locally
+- No mandatory cloud dependency for document search or summarization
 
 ---
 
 ## Technology Stack
 
-**Built with privacy and performance in mind:**
-
-- **Frontend:** React, TypeScript, TailwindCSS
-- **Desktop Framework:** Electron for cross-platform compatibility
-- **Backend:** Python with LangChain for AI orchestration
-- **Local AI:** Ollama integration for on-device language models
-- **Cloud AI:** OpenRouter for access to GPT-4, Claude, and other frontier
- models
-- **Vector Database:** ChromaDB for document embeddings and semantic
-search
-- **Authentication:** Firebase Auth (email/password and Google OAuth)
-- **Cloud Storage:** Firestore for user preferences and settings
-- **Document Processing:** Support for PDF, DOCX, PPTX, Excel, CSV, TXT,
-Markdown, and more
-
-**Security & Privacy:**
-- Code obfuscation for production builds
-- Sandboxed renderer processes
-- Context isolation enabled
-- No telemetry or tracking in Local mode
-- End-to-end encryption for cloud-synced settings
+- **Frontend:** React, TypeScript, TailwindCSS (with Vite)
+- **Desktop Framework:** Electron (cross-platform support for Windows, macOS, Linux)
+- **Backend:** Python (LangChain for orchestration)
+- **Local AI Models:** via Ollama (LLaMA 3, Mistral, etc.)
+- **Semantic Search:** ChromaDB
+- **Document Parsing:** Supports PDF, DOCX, PPTX, XLSX, CSV, TXT, JSON
+- **Other Libraries:** Openpyxl, python-pptx, python-docx, FPDF
 
 ---
 
-## Use Cases
+## Example Workflow
 
-### For Professionals Who Can't Compromise
-
-**Legal:** Draft client documents locally, research case law in the cloud
-
-**Healthcare:** Analyze patient records on-device, summarize public
-research with cloud speed
-
-**Finance:** Model proprietary strategies locally, research market trends
-via cloud
-
-**Consulting:** Keep client work confidential, leverage AI for general
-business tasks
-
-**Engineering:** Protect intellectual property while accessing powerful
-coding assistance
-
-**Research:** Analyze sensitive datasets locally, synthesize public
-literature in the cloud
-
+1. **Launch Herma on your Desktop**
+2. **Upload Documents** (drag-n-drop or file picker)
+3. **Process & Summarize**—Herma parses and summarizes documents automatically
+4. **Semantic Search**—Ask questions about your documents, and get context-aware answers
 
 ---
 
-## Why Herma?
+## Supported File Types
 
-### You Own Your AI Interactions
-Just like you own your devices, you should own your AI conversations.
-Herma puts you in control of where your data goes and how it's processed.
-
-### No More False Choices
-Stop choosing between powerful AI and your privacy. Stop managing two
-different tools. Stop second-guessing every query.
-
-### Intelligence You Can Trust
-Governor mode doesn't just blindly route traffic—it applies *your* rules
-with precision. Set your boundaries once. Work with confidence forever.
+- PDF (.pdf)
+- Word (.docx)
+- PowerPoint (.pptx)
+- Excel (.xlsx)
+- CSV (.csv)
+- Plain Text (.txt)
+- Markdown (.md)
+- JSON (.json)
 
 ---
-
-## The Herma Philosophy
-
-- **Transparent by design:** You know exactly where your data goes
-- **Local-first architecture:** Privacy is the default, not an
-afterthought
-- **No dark patterns:** Clear choices, honest trade-offs, respectful
-design
-- **Open about limitations:** Governor mode is experimental—we tell you
-that upfront
-
----
-
-## Getting Started
-
-### Installation & Download
-
-Visit https://hermaai.com/#/ to download Herma for your
-platform (Windows, macOS, Linux).
-
-### Quick Start
-
-1. **Download & Install:** Get Herma from our landing page
-2. **Choose Your Mode:** Start with Governor mode to experience
-intelligent routing
-3. **Set Your Constitution:** Define what stays local (e.g.,
-"confidential", "medical", "legal")
-4. **Start Working:** Type naturally—Herma handles the routing
-automatically
-
-### First-Time Setup
-
-- Herma will automatically download required local AI models on first run
-(Local/Governor modes)
-- Internet connection required for initial setup and Cloud/Governor modes
-- No internet needed for pure Local mode operation
-
----
-
-## FAQ
-
-**Q: Does Herma store my data?**
-A: In Local mode, nothing ever leaves your device. In Governor/Cloud
-modes, only queries you explicitly route to the cloud are sent to AI
-providers. We never store or log your query content—only metadata like
-mode preferences.
-
-**Q: What AI models does Herma use?**
-A: Local mode uses Ollama (LLaMA 3, Mistral, etc.). Cloud mode uses
-OpenRouter (GPT-4, Claude 3.5, Gemini Pro, etc.). You control which
-provider handles your data.
-
-**Q: How accurate is Governor mode routing?**
-A: Governor mode applies your constitution rules with precision, but it's
-currently experimental. We recommend reviewing critical routing decisions
-until you're confident in your rule set.
-
-**Q: Can I use Herma completely offline?**
-A: Yes! Local mode works 100% offline after initial model downloads.
-
-**Q: Is my privacy constitution shared with anyone?**
-A: No. Your constitution is stored locally on your device and optionally
-synced to your private Firestore account (encrypted). We never see or
-access it.
-
-**Q: What happens if I switch from Cloud to Local mode?**
-A: Context and conversation history remain available. Only the processing
-location changes.
-
----
-
-## License
-
-Herma is proprietary software. See [LICENSE](https://hermaai.com/#/privacy-policy) for details.
-
----
-
-## Contact
-
-**Website:** https://hermaai.com/#/
-
-**Email:** hermalocal@gmail.com
-
----
-
